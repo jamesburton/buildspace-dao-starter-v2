@@ -6,6 +6,9 @@ import App from './App';
 // Import thirdweb provider and Rinkeby ChainId
 import { ChainId, ThirdwebProvider } from '@thirdweb-dev/react';
 
+//(window as any).global = window;
+window.global = window;
+
 // This is the chainId your dApp will work on.
 const activeChainId = ChainId.Rinkeby;
 
